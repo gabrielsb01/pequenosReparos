@@ -1,0 +1,99 @@
+.box
+    position absolute
+    width 100vw
+    height 100vh
+    overflow hidden
+    flex-grow 1
+    display flex
+    z-index 110
+    background #f9f9f9
+    box-shadow none
+ 
+    .appBar
+        z-index 120
+        display flex
+        flex-direction row
+        justify-content space-between
+        box-shadow none
+ 
+
+        .menuLogo
+            display flex
+            position relative
+            top 25px
+            margin-left 100px
+ 
+            button 
+                color text-color-sub
+ 
+    .appBarToolbarIcon
+        color text-color-sub
+    
+    
+ 
+    .appBarShift
+        margin-left 264px
+ 
+    .drawerPaper
+        position fixed
+        top 0
+        left 0
+        white-space nowrap
+        width box-drawerWidth
+        background secondary-color-main
+        transition all .2s ease-in-out
+ 
+    .toolbar
+        cursor pointer
+        height 64px
+        padding 0 8px
+        background #f27e20
+        justify-content flex-start
+        align-items center
+        box-shadow none
+        display flex
+ 
+        .toolbarTitle
+            margin 0 0 0 1rem
+            color white
+ 
+        .toolbarButton
+            position absolute
+            top 0
+            right 0
+            width 73px
+            height 64px
+            border-radius 0
+            color white
+ 
+            &:hover
+                background transparent
+ 
+.menuList
+    padding 0
+ 
+    .menuListItem
+        height 64px
+        text-decoration none
+        border-bottom 1px solid rgba(255, 255, 255, .05)
+ 
+    .menuListItemIcon
+        color #000
+ 
+    .menuListItemText
+        span
+            color #000
+            text-decoration none
+ 
+        .menuListItemActive
+            border-left 3px solid primary-color-main
+            background #1B1E24
+            display flex
+ 
+.drawerPaperClose
+    width 70px
+    overflow hidden
+ 
+.content
+    flex-grow 1
+    padding 64px 0 0 72px
